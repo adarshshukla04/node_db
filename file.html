@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* margin: 0px;
+    padding: 0px; */
+    /* background-color: rgb(255, 231, 200); */
+    font-family: 'Noto Serif Display', serif;
+font-family: 'Varela Round', sans-serif;
+}
+table,td{
+    border:1px solid black;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+  }
+table{
+    border: 2px solid rgb(253, 139, 0);
+    background-color: rgb(255, 199, 94);
+    padding: 16px;
+    margin: 20px;
+    font-size: 19px;
+}
+input{
+    font-size: 20px;
+}
+h1{
+    margin: 20px;
+    padding: 12px;
+    text-decoration: underline;
+    /* font-size: 30px; */
+}
+img{
+    margin: 12px;
+    padding: 12px;
+}
+.cont table{
+    font-size: 22px;
+    margin: 19px;
+    padding: 16px;
+}
+.cont h1{
+    margin-top: 34px;
+    padding: 15px;
+    text-decoration: underline;
+}
+button{
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover,
+button:hover {
+    color: rgb(255, 255, 255);
+}
+#home::before{
+    content:"";
+    background: url('electro.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 120%;
+    width: 100%;
+    top:0px;
+    left:0px;
+    z-index: -1;   /*contents black strip ke upar aa jayega*/
+    opacity: 1.4;
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
+}
+img{
+    margin-top: 18px;
+}
+
+</style>
+
+<body>
+    <center>
+        <img src="drdo-logo.png" alt="no image">
+        <h1>Receiver</h1>
+        <div class="container"></div>
+    <table cellspacing="12px">
+        <tr>
+            <th>Ch1</th>
+            <td><form name="f1">
+                <input type="number" name="frequency" id="frequency">
+                Frequency</td>
+            <td><input type="number" name="power" id="power">
+                Power</td>
+        </tr>
+    </form>
+        <tr>
+            <th>Ch2</th>
+            <td><form name="f1">
+                <input type="number" name="frequency" id="frequency">
+                Frequency</td>
+            <td><input type="number" name="power" id="power">
+                Power</td>
+        </tr>
+    </form>
+        <tr>
+            <th>Ch3</th>
+            <td><form name="f1">
+                <input type="number" name="frequency" id="frequency">
+                Frequency</td>
+            <td><input type="number" name="power" id="power">
+                Power</td>
+        </tr>
+    </form>
+        <tr>
+            <th>Ch4</th>
+            <td><form name="f1">
+                <input type="number" name="frequency" id="frequency">
+                Frequency</td>
+            <td><input type="number" name="power" id="power">
+                Power</td>
+        </tr>
+    </form>
+    </div>
+    </table>
+    </center>
+    <center>
+    <div class="cont"> 
+    <h1>Transmitter</h1>
+        <table>
+        <tr>
+            <td>Waveform</td>
+            <td>Bandwidth</td>
+            <td>TXCH1</td>
+            <td>TXCH2</td>
+            <td>TXCH3</td>
+        </tr>
+        <tr>
+            <td>FCF</td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+        </tr>
+    </table>
+</div>
+   
+</center>
+<section><div id="home">
+    <p>  </p>
+</div>
+</section>
+
+</body>
+</html>

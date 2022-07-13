@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+        $(document).ready(function(){
+            $('#myTable').DataTable();
+        });
+    </script>
+</head>
+<body>
+    <form action="/update" method="post" encType="multipart/form-data">
+        <label for="channel">Channel Name</label>
+        <input type="text"  name="channel">
+        
+        <br>
+        <br>
+        <label  for="freq">New Frequency</label>
+        <input type="number" name="freq">
+        <br>
+        <br>
+        <label for="pow">New power</label>
+        <input type="number" name="pow">
+        <br>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>

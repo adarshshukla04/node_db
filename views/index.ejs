@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
+
+
+
+
+<body>
+    <center>
+        <img src="drdo-logo.png" alt="no image">
+        <h1>Receiver</h1>
+        <div class="container"></div>
+    <table cellspacing="12px">
+        <% data.forEach(function(n_data){ %>
+        <tr>
+            <th><%= n_data.Channel %></th>
+            <td><%= n_data.Frequency %> Frequency</td>
+            <td> <%= n_data.Power %>
+                Power</td>
+                
+        </tr>
+        <%}) %>
+    </table>
+    <a href="/update">Update</a>
+    </center>
+    <center>
+    <div class="cont"> 
+    <h1>Transmitter</h1>
+        <table>
+        <tr>
+            <td>Waveform</td>
+            <td>Bandwidth</td>
+            <td>TXCH1</td>
+            <td>TXCH2</td>
+            <td>TXCH3</td>
+        </tr>
+        <tr>
+            <td>FCF</td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+            <td><button>ON/OFF</button></td>
+        </tr>
+    </table>
+</div>
+   
+</center>
+<section><div id="home">
+    <p>  </p>
+</div>
+</section>
+
+</body>
+</html>
